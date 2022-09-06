@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
 
+@media (max-width: 900px) {
+    html { font-size: 13px; }
+}
+
+@media (max-width: 755px) {
+    html { font-size: 11px; }
+}
+
+:root {
+    --main-green: #20c997;
+    --dark-grey: #212529;
+    --semidark-grey: #343a40;
+    --heavydark-grey: #212529;
+    --light-grey: #ced4da;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,4 +26,104 @@ html {
     font-weight: 500;
     color: white;
     margin: 0;
+}
+
+header {
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    top: 0;
+}
+
+.nav_top {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: #20c997;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #20c997;
+    border-color: #20c997;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    border-width: 2px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 0;
+    background-image: url('images/bg-matrix.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.home_wrapper {
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.7;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home_content {
+    position: relative;
+    z-index: 2;
+    top: 40vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    bottom: 2rem;
 }
