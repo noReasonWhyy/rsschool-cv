@@ -1,1 +1,1 @@
-# rsschool-cv
+https://noreasonwhyy.github.io/rsschool-cv/
