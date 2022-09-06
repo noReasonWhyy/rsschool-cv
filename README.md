@@ -1,1 +1,1 @@
-https://noreasonwhyy.github.io/rsschool-cv/cv
+https://noreasonwhyy.github.io/rsschool-cv/
